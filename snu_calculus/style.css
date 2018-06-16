@@ -1,0 +1,134 @@
+body {
+  background-color: #F3F6FC;
+}
+table#container {
+  text-indent:0;
+  line-height:125%;
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:5pt;
+  margin-left:0;
+  border-collapse:collapse;
+  width: 600px;
+  cellspacing: 0;
+
+  cellpadding: 2;
+  height: auto;
+}
+
+td#table-name {
+  border-width:1pt;
+  border-color:rgb(204,204,204);
+  border-style:solid;
+  width: 589;
+  height:32px;
+  bgcolor: #F3F6FC;
+}
+
+p#table-name {
+   text-indent:0;
+   line-height:125%;
+   margin-top:0;
+   margin-right:0;
+   margin-bottom:5pt;
+   margin-left:0;
+}
+
+tr#top {
+  border-width:1pt;
+  border-style:solid;
+  width: 20%;
+  height: 32px;
+  background-color: #3C65B9;
+}
+
+p#top {
+  text-indent:0;
+  line-height:125%;
+  margin-top:0;
+  margin-right:0;
+  margin-bottom:5pt;
+  margin-left:0;
+}
+
+td#top-nav {
+  border-left-width: 1px;
+  border-left-color: white;
+  border-left-style: solid;
+  width: 40%;
+  height: 32px;
+}
+
+p#top-nav-1 {
+
+  text-indent:0;
+  line-height:125%;
+  margin-top:3pt;
+  margin-right:0;
+  margin-bottom:3pt;
+  margin-left:0;
+}
+
+p#top-nav-2 {
+  text-indent:0;
+  line-height:125%;
+  margin-top:3pt;
+  margin-right:0;
+  margin-bottom:3pt;
+  margin-left:0;
+}
+
+td#semester {
+  border-width:1pt;
+  border-color:rgb(102,102,102);
+  border-style:solid;
+  width:20%;
+}
+
+p#semester {
+  text-indent:0;
+  line-height:125%;
+  margin-top:3pt;
+  margin-right:0;
+  margin-bottom:3pt;
+  margin-left:0;
+}
+
+
+td#content {
+  border-width:1pt;
+  border-color:rgb(102,102,102);
+  border-style:solid;
+  width: 40%;
+}
+
+p#content {
+  text-indent:0;
+  line-height:125%;
+   margin-top:3px;
+   margin-right:0;
+   margin-bottom:3px;
+   margin-left:0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a#nav:link {
+    text-decoration: underline;
+    color: #CCCCCC;
+}
+
+a#nav:visited {
+    color: #CCCCCC;
+}
