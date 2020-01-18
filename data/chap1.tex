@@ -1,0 +1,145 @@
+%!TEX encoding = utf-8
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{kotex}
+\usepackage{geometry}
+	\geometry{
+		top = 20mm,
+		left = 20mm,
+		right = 20mm,
+		bottom = 20mm
+	}
+
+\usepackage{enumitem}
+\setlist[enumerate,1]{label={(\arabic*)}}
+
+\setcounter{section}{1}
+
+\pagenumbering{gobble}
+\renewcommand{\baselinestretch}{1.3}
+\newcommand{\ds}{\displaystyle}
+
+\theoremstyle{definition}
+\newtheorem{problem}{\sffamily 문제}[section]
+\newcommand{\prob}[2]{\begin{problem}{[\sffamily #1]} #2\end{problem}~}
+
+
+\begin{document}
+\begin{center}
+\textbf{\Large 1장 급수 Additional Problems}
+\end{center}
+
+\prob{12Q1}{
+\begin{enumerate}
+	\item 급수 $\ds \sum_{n=1}^\infty n^2 \sin \dfrac{1}{n^3}$ 은 발산함을 보이시오.
+	\item 급수 $\ds \sum_{n=1}^\infty n^2\tan\dfrac{1}{n^3}$ 의 수렴여부를 판정하시오.
+\end{enumerate}
+}
+
+\prob{16Q1}{다음 급수의 수렴$\cdot$발산을 판정하시오.
+\begin{enumerate}
+	\item $\ds \sum_{n=1}^\infty \frac{2^nn^n}{n!e^n}$
+	\item $\ds \sum_{n=1}^\infty \frac{(n+2)(n^2+3)}{n^2(n+1)(n^2+2)}$
+	\item $\ds \sum_{n=1}^\infty \frac{(-1)^n (n+1)^n}{(2n)^n}$
+\end{enumerate}
+}
+
+\prob{17Q1}{수열 $\left\{ a_n \right\} _{n \geq 1}$이 다음과 같이 주어져 있을 때, 급수 $\displaystyle\sum\limits_{n=1}^{\infty}a_n$의 수렴 혹은 발산 여부를 확인하시오.
+\begin{enumerate}
+	\item $\displaystyle a_n=\frac{1}{3n^2-20}$
+	\item $\displaystyle a_n=\left(\frac{1}{n} - 1\right) ^n$
+\end{enumerate}
+}
+
+\prob{17Q1}{다음 급수가 수렴함을 증명하시오.
+\begin{equation*}
+	\sum_{n=1}^{\infty}a_n, \qquad a_n=\left\{
+	\begin{array}{rl}
+	\dfrac{2}{n}, &\, n\text{은 }  3\text{의 배수}\\ \\
+	-\dfrac{1}{n}, &\, n\text{은 } 3\text{의 배수가 아닌 자연수}
+	\end{array}
+	\right.
+\end{equation*}
+}
+
+\prob{17Q1}{
+\begin{enumerate}
+	\item $f(x)=\dfrac{1}{\sqrt{x}}$의 그래프를 이용하여 임의의 자연수 $n$에 대해
+	$$\frac{1}{\sqrt{2}}+\frac{1}{\sqrt{3}}+\cdots+\frac{1}{\sqrt{n}}<2\sqrt{n}-2<\frac{1}{\sqrt{1}}+\frac{1}{\sqrt{2}}+\cdots+\frac{1}{\sqrt{n-1}}$$
+	임을 확인하시오.
+	\item  위의 결과를 사용하여 극한값
+	$$\delta := \lim_{n \rightarrow \infty} \left(\sum_{k=1}^n \frac{1}{\sqrt{k}}-2\sqrt{n}\right)$$
+	이 존재함을 보여라.
+\end{enumerate}
+}
+
+\prob{18Q1}{다음 급수의 수렴$\cdot$발산을 판정하라.
+\begin{enumerate}
+	\item $\displaystyle \sum_{n=1}^\infty \left(1+\frac{1}{n} \sin{n}\right)^n$
+	\item $\displaystyle \sum_{n=1}^\infty \frac{1}{n}\sin{\left(\frac{1}{n}\right)}\sin{n}$
+\end{enumerate}
+}
+
+\prob{18Q1}{급수 $$\sum_{n=1}^\infty \frac{n!\cdot 2^n}{\left(n+\sqrt{n}\right)^n}$$의 수렴$\cdot$발산을 판정하라.}
+
+\prob{18Q1}{급수 $\displaystyle \sum_{n=2}^\infty a_n^{-n}$ 의 수렴$\cdot$발산을 판정하라. 단, $$a_n := \int_1^n \sin{\left(\frac{1}{\sqrt{x}}\right)}dx$$이다.}
+
+\prob{19Q1}{다음 급수의 수렴$\cdot$발산을 판정하시오.
+	\begin{enumerate}
+		\item $\displaystyle \sum_{n=1}^\infty \frac{n^n}{(2.7)^nn!}$
+		\item $\displaystyle \sum_{n=2}^\infty \frac{\sin \frac{1}{n}}{(\log n)^2}$
+\end{enumerate}
+}
+
+\prob{19Q1}{자연수 $n$에 대하여 $$s_n = \int_1^n \frac{\sin\pi x}{x} dx$$ 일 때, 수열 $(s_n)$ 이 수렴함을 보이시오.}
+
+\prob{19Q1}{피보나치 수열 $(f_n)$ 은 점화식 $f_1=f_2=1$, $f_{n+2}=f_{n+1}+f_n$ 으로 주어진다. 이 때 급수 $\ds \sum_{i=1}^\infty \frac{n}{\sqrt{f_n}}$ 의 수렴$\cdot$발산을 판정하시오.}
+
+\prob{19Q1}{급수 $\ds \sum_{i=1}^\infty \left(\frac{an}{n+2}\right)^n$ 가 수렴하는 양수 $a$ 의 범위를 구하시오.}
+
+\prob{19Q1}{급수 $\ds \sum_{i=1}^\infty (-1)^n \log\left(1+\frac{1}{n}\right)$ 의 수렴여부를 판정하고 또 절대수렴 하는지 판정하시오.}
+
+\prob{19Q1}{다음 급수의 수렴$\cdot$발산을 판정하시오.
+\begin{enumerate}
+	\item $\displaystyle \sum_{n=1}^\infty \frac{5^n}{(1+\tan \frac{1}{n})^{n\cot \frac{1}{n}}}$
+	\item $\displaystyle \sum_{n=1}^\infty \frac{\left(\sqrt{5}-1\right)\left(\sqrt{5}-2\right)\cdots \left(\sqrt{5}-n\right)}{(n+1)!\cdot \sqrt{5}^n}$ 
+\end{enumerate}
+}
+
+\prob{19Q1}{특이적분 $\displaystyle \int_{2}^{\infty} \frac{5^x}{x^x}\, dx$ 가 존재함을 보이시오.}
+
+\prob{19Q1}{자연수 $n$ 에 대하여, $ a_n:=\begin{cases}
+\dfrac{2}{n} & (n : \text{ 3의 배수})\\
+-\dfrac{1}{n} & (n : \text { 3의 배수가 아닌 수})
+\end{cases}$ 라고 할 때, 수열 $\displaystyle \left(\sum_{n=1}^{3n} a_k\right)_{n=1}^\infty$ 은 수렴함을 보이시오.
+}
+
+\prob{1}{다음 급수가 수렴하도록 하는 실수 $p$ 의 범위를 구하여라.
+\begin{enumerate}
+	\item $\ds \sum_{n=2}^\infty \frac{1}{n(\log n)^p}$
+	\item $\ds \sum_{n=3}^\infty \frac{1}{n\log n\cdot (\log\log n)^p}$
+	\item $\ds \sum_{n=1}^\infty n(1+n^2)^p$
+	\item $\ds \sum_{n=1}^\infty \frac{\log n}{n^p}$
+\end{enumerate}
+}
+
+\prob{1}{양항급수 $\ds \sum a_n$, $\ds \sum b_n$ 에 대하여 다음 물음에 답하여라.
+\begin{enumerate}
+	\item $\ds \sum b_n <\infty$ 이고 $\ds \lim_{n \rightarrow \infty} \frac{a_n}{b_n} = 0$ 이면 $\ds \sum a_n < \infty$ 임을 보여라.
+	\item $\ds \sum b_n = \infty$ 이고 $\ds \lim_{n \rightarrow \infty} \frac{a_n}{b_n} = \infty$ 이면 $\ds \sum a_n = \infty$ 임을 보여라.
+\end{enumerate}
+}
+
+\prob{1}{수열 $a_n$ ($a_n>0$) 에 대하여 다음 물음에 답하여라.
+\begin{enumerate}
+	\item $\ds \lim_{n \rightarrow \infty} na_n\neq 0$ 이면 $\ds \sum a_n$ 은 발산함을 보여라.
+	\item $\ds\sum a_n<\infty$ 이면 $\ds \sum \log(1+a_n) < \infty$ 임을 보여라.
+	\item $\ds\sum a_n<\infty$ 이면 $\ds \sum \sin(a_n)$ 은 수렴하는지 조사하여라.
+\end{enumerate}
+}
+
+\prob{1}{양항급수 $\ds \sum a_n$, $\ds \sum b_n$ 이 모두 수렴하면 $\ds\sum a_nb_n$ 이 수렴하는지 조사하여라.}
+\end{document}
